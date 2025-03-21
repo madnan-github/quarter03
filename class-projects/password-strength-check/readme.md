@@ -1,0 +1,1 @@
+https://github.com/madnan-github/password-strength-check

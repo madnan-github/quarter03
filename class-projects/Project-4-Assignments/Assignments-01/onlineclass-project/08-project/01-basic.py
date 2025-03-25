@@ -1,0 +1,29 @@
+# https://www.youtube.com/watch?v=Y6VdvNdNHqo&list=PLTsu3dft3CWhBViLMhL0Aqb75rkSz_CL-&index=16
+import streamlit as st
+st.logo("file_01.jpg", size="large", link=None, icon_image=None)
+
+st.title("This is my Streamlit app!")
+st.image("file_01.jpg", caption="This is a beautiful Picture")
+
+st.header("This is header")
+st.subheader("This is subheader")
+st.text("This is text")
+st.markdown("**This is bold text using markdown**")
+
+name = "Muhammad Adnan"
+number = 3
+st.write(f"Hello, {name}. Here's a number: {number}")
+
+if st.button("Click Me!"):
+    st.write("Hi")
+#checkbox  true or false
+checked = st.checkbox("Check Me!")
+if checked:
+    st.write("Checkbox is check!")
+# slider
+age = st.slider("Select your age",0,100,40)
+st.write("Your age is :", age)
+#input
+name = st.text_input("Enter your name", value= "")
+st.write("Hello, ", name)
+
